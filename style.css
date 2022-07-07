@@ -1,0 +1,713 @@
+@import url('https://fonts.googleapis.com/css2?family=Zen+Old+Mincho:wght@900&display=swap');
+
+/* COMMON----------------------------------------------------------------------------------------- */
+* {
+  font-family: "Nunito", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-transform: capitalize;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  transition: all 0.2s linear;
+}
+header a{
+  font-family: 'Zen Old Mincho', serif;
+}
+header span{
+  font-family: 'Zen Old Mincho', serif;
+
+}
+*::selection {
+  background: #BC0000;
+  color: #fff;
+}
+
+.box h3{
+  font-family: 'Zen Old Mincho', serif;
+
+}
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-padding-top: 6rem;
+  scroll-behavior: smooth;
+}
+
+section {
+  padding: 2rem 9%;
+}
+
+/* Span heading--------------------------------------------------------------- */
+.heading {
+  text-align: center;
+  padding: 2.5rem 0;
+}
+
+.heading span {
+  font-size: 3.5rem;
+  background: rgba(255, 165, 0, 0.2);
+  color: #BC0000;
+  border-radius: 0.5rem;
+  padding: 0.2rem 1rem;
+}
+
+.heading span.space {
+  background: none;
+}
+/* Span heading--------------------------------------------------------------- */
+
+/* Button--------------------------------------------------------------------- */
+.btn {
+  display: inline-block;
+  margin-top: 1rem;
+  background: #BC0000;
+  color: #fff;
+  padding: 0.8rem 3rem;
+  border: 0.2rem solid #BC0000;
+  cursor: pointer;
+  font-size: 1.7rem;
+}
+
+.btn:hover {
+  background: rgba(255, 165, 0, 0.2);
+  color:#BC0000;
+}
+/* Button--------------------------------------------------------------------- */
+
+
+/* Header--------------------------------------------------------------------- */
+header{
+  position: fixed;
+  top:0; left: 0; right:0;
+  background-color:rgba(0,0,0,0.25);
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding:2rem 9%;
+}
+
+/* header logo------------------------------------------------------------------ */
+.head{
+  display: flex;
+  flex-direction: row-reverse;
+  padding-left: 0px;
+}
+.logo{
+  font-size: 3rem;
+  font-weight: bolder;
+  color:#fff;
+  text-transform: uppercase;
+}
+.logo span{
+  color:#BC0000;
+}
+/* header logo------------------------------------------------------------------ */
+
+
+/* Navigation bar-------------------------------------------------------------------------------------- */
+#nav_menu ul{
+list-style: none;
+position: relative;
+font-size: 2rem;
+color: white;
+text-align: center;
+
+ }
+ #nav_menu ul li a{
+  text-decoration: none;
+  color: white;
+}
+#nav_menu ul li a:hover {
+    color:#BC0000;
+}
+
+#nav_menu ul li { 
+  float: left; 
+  padding-left: 30px;
+  padding-right: 30px;
+} 
+#nav_menu ul ul {
+display: none;
+position: absolute;
+background: #333; ;
+padding: 10px;
+top: 100%;
+}
+#nav_menu ul ul li {float: none; } 
+#nav_menu ul li:hover > ul
+ {
+display: block; 
+} 
+#nav_menu > ul::after 
+{
+content: "";
+display: block; 
+clear: both; 
+}
+/* Navigation Bar----------------------------------------------------------------------------------------- */
+
+/*------------------------------------FOOTER---------------------------------*/
+.footer{
+  background:#333;
+  padding: 2rem;
+}
+
+.footer .box-container{
+  display: flex;
+  flex-wrap: wrap;
+  gap:1.5rem;
+}
+
+.footer .box-container .box{
+  padding:1rem 0;
+  flex:1 1 25rem;
+}
+
+.footer .box-container .box h3{
+  font-size: 2.5rem;
+  padding:.7rem 0;
+  color:#fff;
+}
+
+.footer .box-container .box p{
+  font-size: 1.5rem;
+  padding:.7rem 0;
+  color:#eee;
+}
+
+.footer .box-container .box a{
+  display: block;
+  font-size: 1.5rem;
+  padding:.7rem 0;
+  color:#eee;
+}
+
+.footer .box-container .box a:hover{
+  color:#BC0000;
+  text-decoration: underline;
+}
+.footer-table
+{
+  border-collapse: collapse;
+  width: 50%;
+  font-size: 1.5rem;
+}
+
+th, td {
+  padding: 8px;
+  text-align: left;
+  border-bottom: 1px solid #DDD;
+  color:white;
+}
+
+tr:hover {background-color: orange;}
+
+
+.footer .credit{
+  text-align: center;
+  padding:2rem 1rem;
+  margin-top: 1rem;
+  font-size: 2rem;
+  font-weight: normal;
+  color:#fff;
+  border-top: .1rem solid rgba(255,255,255,.2);
+}
+
+.footer .credit span{
+  color:#BC0000;
+}
+/*------------------------------------FOOTER---------------------------------*/
+
+
+
+/* Index video part Section-------------------------------------------------- */
+.home {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column;
+  position: relative;
+  z-index: 0;
+}
+
+.home .content {
+  text-align: center;
+}
+
+.home .content h3 {
+  font-size: 4.5rem;
+  color: #fff;
+  margin-top: 80px;
+  text-transform: uppercase;
+  text-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.1);
+}
+
+.home .content p {
+  font-size: 2.5rem;
+  color: #fff;
+  padding: 0.5rem 0;
+}
+.heading{
+  font-size: 40px;
+  font-family:'Zen Old Mincho', serif;
+ 
+}
+
+.home .video-container
+  centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  object-fit: cover;
+}
+.video-container{
+  top: 0;
+}
+/* Index video part Section-------------------------------------------------- */
+/* Index Services Box --------------------------------------------------------- */
+.services .box-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+.box .i{
+  color:#BC0000;
+}
+.services .box-container .box {
+  flex: 1 1 30rem;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  text-align: center;
+}
+
+.services .box-container .box i {
+  padding: 1rem;
+  font-size: 5rem;
+  color: #BC0000;
+}
+
+.services .box-container .box h3 {
+  font-size: 2.5rem;
+  color: #333;
+}
+
+.services .box-container .box p {
+  font-size: 1.5rem;
+  color: #666;
+  padding: 1rem 0;
+}
+
+.services .box-container .box:hover {
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
+}
+/* Index Services Box --------------------------------------------------------- */
+
+
+/*-----------------------------BOOKINGS----------------------------------*/
+.book .row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+.book .row .image {
+  flex: 1 1 40rem;
+}
+
+.book .row .image img {
+  width: 100%;
+}
+
+.book .row form {
+  flex: 1 1 40rem;
+  padding: 2rem;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
+  border-radius: 0.5rem;
+}
+
+.book .row form .inputBox {
+  padding: 0.5rem 0;
+}
+
+.book .row form .inputBox input {
+  width: 100%;
+  padding: 1rem;
+  border: 0.1rem solid rgba(0, 0, 0, 0.1);
+  font-size: 1.7rem;
+  color: #333;
+  text-transform: none;
+}
+
+.book .row form .inputBox h3 {
+  font-size: 2rem;
+  padding: 1rem 0;
+  color: #666;
+}
+/*-----------------------------BOOKINGS----------------------------------*/
+
+
+/*-----------------------------PACKAGES----------------------------------*/
+.packages {
+  padding-top: 80px;
+}
+
+.packages .box-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.packages .box-container .box {
+  flex: 1 1 30rem;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
+}
+
+.packages .box-container .box img {
+  height: 25rem;
+  width: 100%;
+  object-fit: cover;
+}
+
+.packages .box-container .box .content {
+  padding: 2rem;
+}
+
+.packages .box-container .box .content h3 {
+  font-size: 2rem;
+  color: #333;
+}
+
+.packages .box-container .box .content h3 i {
+  color: #BC0000;
+}
+
+.packages .box-container .box .content p {
+  font-size: 1.7rem;
+  color: #666;
+  padding: 1rem 0;
+}
+
+.packages .box-container .box .content .stars i {
+  font-size: 1.7rem;
+  color: #BC0000;
+}
+
+.packages .box-container .box .content .price {
+  font-size: 2rem;
+  color: #333;
+  padding-top: 1rem;
+}
+
+.packages .box-container .box .content .price span {
+  color: #666;
+  font-size: 1.5rem;
+  text-decoration: line-through;
+}
+/*-----------------------------PACKAGES----------------------------------*/
+
+
+/*-------------------------------------GALLERY---------------------------------*/
+.gallery {
+  padding-top: 80px;
+}
+.gallery .box-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+.gallery .box-container .box {
+  overflow: hidden;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
+  border: 1rem solid #fff;
+  border-radius: 0.5rem;
+  flex: 1 1 30rem;
+  height: 25rem;
+  position: relative;
+}
+
+.gallery .box-container .box img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.gallery .box-container .box .content {
+  position: absolute;
+  top: -100%;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.7);
+  padding: 2rem;
+  padding-top: 5rem;
+}
+
+.gallery .box-container .box:hover .content {
+  top: 0;
+}
+
+.gallery .box-container .box .content h3 {
+  font-size: 2.5rem;
+  color: #BC0000;
+}
+
+.gallery .box-container .box .content p {
+  font-size: 1.5rem;
+  color: #eee;
+  padding: 0.5rem 0;
+}
+/*-------------------------------------GALLERY---------------------------------*/
+
+
+/*------------------------------------CONTACT US---------------------------------*/
+.contact .row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+.contact .row .image-div {
+  flex: 1 1 35rem;
+}
+
+.contact .row .image-div img {
+  width: 100%;
+}
+
+.contact .row form {
+  flex: 1 1 50rem;
+  padding: 2rem;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
+  border-radius: 0.5rem;
+}
+
+.contact .row form .inputBox {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.contact .row form .inputBox input,
+.contact .row form textarea {
+  width: 49%;
+  margin: 1rem 0;
+  padding: 1rem;
+  font-size: 1.7rem;
+  color: #333;
+  background: #f7f7f7;
+  text-transform: none;
+}
+
+.contact .row form textarea {
+  height: 15rem;
+  resize: none;
+  width: 100%;
+}
+/*------------------------------------CONTACT US---------------------------------*/
+
+
+
+
+/* ------------------------------------------ThankYou Page---------------------------------- */
+.thanks {
+  min-height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column;
+  position: relative;
+}
+.thanks h1 {
+  font-size: 6rem;
+  color: #BC0000;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  text-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.1);
+}
+
+.thanks p {
+  color: #333;
+  font-size: 10rem;
+  margin-top: 2rem;
+  font-size: large;
+}
+
+
+.foot {
+  background: #333;
+  margin-top: 31rem;
+  padding: 25px;
+}
+.foot .cred {
+  text-align: center;
+  margin-top: 0.5rem;
+  font-size: 2rem;
+  font-weight: normal;
+  color: #fff;
+}
+
+.foot .cred span {
+  color: #BC0000;
+}
+
+  header .navbar {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    left: 0;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-top: 0.1rem solid rgba(255, 255, 255, 0.2);
+    padding: 5px;
+    
+  }
+
+  header .navbar.active {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  }
+
+  header .navbar a {
+    display: block;
+    border-radius: 0.5rem;
+    padding: 1.5rem;
+    margin: 1.5rem 0;
+    background: #222;
+  }
+
+#btn1 {
+  width: 100%;
+  text-align: center;
+}
+/* ----------------------------LOGIN--------------------------------- */
+.sign {
+  font-family: "Nunito", sans-serif;
+  background-size: 100px;
+  background: url("images/login.jpg");
+  background-repeat: no-repeat;
+}
+
+.login-section {
+  width: 382px;
+  overflow: hidden;
+  margin: auto;
+  margin: 20 0 0 450px;
+  padding: 57px;
+  background: #333;
+  border-radius: 15px;
+  padding-bottom: 100px;
+
+}
+
+
+.login-label {
+  color: #fff;
+  font-size: 17px;
+}
+.login-span{
+  font-family: "Nunito", sans-serif;
+  color: white;
+  font-size: 17px;
+}
+.login-a {
+    float: right;
+    background-color: #333;
+    color: #BC0000;
+  } 
+
+#Uname {
+  width: 300px;
+  height: 30px;
+  border: none;
+  border-radius: 3px;
+  padding-left: 8px;
+}
+#login-foot{
+  margin-top: 150px;
+}
+#Pass {
+  width: 300px;
+  height: 30px;
+  border: none;
+  border-radius: 3px;
+  padding-left: 8px;
+  color: #BC0000;
+}
+
+.logbtn{
+  background: #BC0000;
+  color: white;
+  font-family: "Nunito", sans-serif;
+  padding: 8px;
+  border-radius: 8px;
+  margin-right: 10px;
+}
+.logbtn:hover{
+  cursor: pointer;
+  background: rgba(255, 165, 0, 0.2);
+}
+/* ----------------------------BLOGSPOT--------------------------------- */
+.blog-img img{
+  width: 100%;
+  padding: 5px;
+  border: 2px solid goldenrod;
+}
+
+.card {
+  background-color: white;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+.blog-body {
+  font-family: Arial;
+  background: #f1f1f1;
+}
+
+
+.blg-leftcolumn {
+  float: left;
+  width: 75%;
+}
+/* ----------------------------------------TESTTIMONIAL--------------------------------------- */
+.test-container {
+  box-shadow: 5px 10px 18px #888888;
+  border: 2px solid #ccc;
+  background: #fff;
+  border-radius: 5px;
+  padding: 16px;
+  color: black;
+  margin: 16px 0
+}
+
+.test-container img {
+  float: left;
+  margin-right: 20px;
+  border-radius: 50%;
+}
+
+.test-container span {
+  font-size: 20px;
+  margin-right: 15px;
+}
+.test-span{
+  font-size: 15px;
+  color: #BC0000;
+}
+.test-p{
+  font-size: 20px;
+}
+.test-h1{
+  font-size: 30px;
+  color: white;
+}
